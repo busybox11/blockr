@@ -1,0 +1,277 @@
+html {
+	scroll-behavior: smooth;
+	min-width: 1200px;
+}
+
+body {
+	font-family: "Product Sans";
+	margin: 0;
+	transition: all 0.5s;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.header {
+	background-color: #007eff;
+	padding: 1em 1.5em;
+	color: white;
+	box-shadow: 0px 4px 8px #00000030;
+	position: sticky;
+	top: 0;
+	z-index: 9;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+}
+
+/* .container from bootstrap CSS */
+.container {
+	padding: 15px;
+}
+
+@media (min-width: 850px){
+	.container {
+		width: 700px;
+	}
+}
+
+#blockr_title {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar {
+	background-color: #ffffff;
+	width: auto;
+	box-shadow: 0px 4px 8px 2px #00000030;
+	transition: all 0.5s;
+	height: 100%;
+	max-width: 300px;
+	margin: 1.5vh .5vh 1.5vh 2vh;
+	border-radius: .5vh;
+	margin-left: auto;
+}
+
+#content {
+	margin-right: auto;
+}
+
+.sidebar_element {
+	padding: 1em 1.5em;
+	width: 265px;
+}
+
+.se_big_text {
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 2px;
+}
+
+.se_bottom_text {
+	font-size: 18px;
+}
+
+#bc_se {
+	color: #820000;
+}
+
+.s_elem {
+	margin: 1em 1.5em;
+	display: flex;
+	align-items: center;
+}
+
+.se_title {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#content_header {
+	display: flex;
+	align-items: center;
+}
+
+#icon_blockr {
+	padding: 8px;
+	border-radius: 100%;
+	margin-right: 4px;
+}
+
+#adaway_list {
+	text-decoration: none;
+	color: #006cc1;
+}
+
+#ch_title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#ch_subtitle {
+	font-size: 16px;
+}
+
+.content_section {
+	margin: 15px 0px 25px 0px;
+}
+
+.cs_main {
+	padding-top: 80px;
+	margin-top: -80px;
+}
+
+.cs_cont {
+	box-shadow: 0px 3px 8px 2px #00000020;
+	transition: background 0.5s;
+	border-radius: .5em;
+}
+
+.cs_header {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.s_nav {
+	text-decoration: none;
+	color: black;
+	transition: all 0.5s;
+	display: flex;
+}
+
+.csh_icon {
+	height: 24px;
+	width: 24px;
+	margin-right: 6px;
+	transition: all 0.5s;
+}
+
+.cs_elem {
+	padding: 12px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.cs_elem_textarea {
+	display: block;
+	padding: 12px 20px;
+}
+
+.cse_text_div {
+	width: 100%;
+}
+
+.cse_title {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.cse_subtitle {
+	font-size: 14px;
+}
+
+/* Checkbox switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	background-color: #00000020;
+	border-radius: 20px;
+	transition: all 0.3s;
+}
+
+.switch::after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: white;
+	top: 2px;
+	left: 2px;
+	transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+	left: 17px;
+}
+
+.checkbox:checked + .switch {
+	background-color: #004882;
+}
+
+.checkbox {
+	display : none;
+}
+
+.switch_elem {
+	cursor: pointer;
+}
+
+.toggle_div {
+	height: 20px;
+	padding-left: 12px;
+}
+
+.cs_sep {
+	margin: 0;
+	height: 1px;
+	background: #00000020;
+	border: 0px;
+}
+
+.textarea_lists {
+	resize: vertical;
+	width: 100%;
+	margin: 1vh 0px;
+	border-radius: 5px;
+	border: none;
+	padding: 0px;
+}
+
+.btn {
+	padding: 1vh 1.5vh;
+	border-radius: .5vh;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .5s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	box-shadow: 0px 2px 4px 2px #00000030;
+}
+
+.secondary_btn {
+	background-color: #f7f7f7;
+	color: black;
+}
+
+.primary_btn {
+	background-color: #007eff;
+	color: white;
+	box-shadow: 0px 2px 4px 1px #00000020;
+}
+
+.left_btn {
+	margin-right: auto;
+}
+
+.flex {
+	display: flex;
+}

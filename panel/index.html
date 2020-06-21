@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel - blockr</title>
+	<link rel="stylesheet" href="style_dark.css" id="page_css" />
+	<link rel="stylesheet" href="../views/fonts/productsans.css" />
+	<script src="panel.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="content" style="display:flex">
+			<h1 id="blockr_title">blockr</h1>
+		</div>
+	</div>
+	<div class="content" id="page_content">
+		<div class="sidebar">
+			<div class="sidebar_element" id="bc_se">
+				<span class="se_big_text" id="bc_bt">0</span>
+				<span class="se_bottom_text">elements blocked</span>
+			</div>
+			<hr class="cs_sep">
+			<div class="s_elem">
+				<a class="s_nav" href="#general"><span class="se_title"><svg xmlns="http://www.w3.org/2000/svg" class="csh_icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>General</span></a>
+			</div>
+			<div class="s_elem">
+				<a class="s_nav" href="#blocked_content"><span class="se_title"><svg xmlns="http://www.w3.org/2000/svg" class="csh_icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"></path></svg>Blocked content</span></a>
+			</div>
+			<!--<div class="s_elem">
+				<a class="s_nav" href="#whitelist"><span class="se_title"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="csh_icon" viewBox="0 0 24 24"><path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M7 7H17V5H19V19H5V5H7V7M12 17V15H17V17H12M12 11V9H17V11H12M8 12V9H7V8H9V12H8M9.25 14C9.66 14 10 14.34 10 14.75C10 14.95 9.92 15.14 9.79 15.27L8.12 17H10V18H7V17.08L9 15H7V14H9.25" /></svg>Whitelist</span></a>
+			</div>
+			<div class="s_elem">
+				<a class="s_nav" href="#blacklist"><span class="se_title"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="csh_icon" viewBox="0 0 24 24"><path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M7 8H9V12H8V9H7V8M10 17V18H7V17.08L9 15H7V14H9.25C9.66 14 10 14.34 10 14.75C10 14.95 9.92 15.14 9.79 15.27L8.12 17H10M11 4C11 3.45 11.45 3 12 3S13 3.45 13 4 12.55 5 12 5 11 4.55 11 4M17 17H12V15H17V17M17 11H12V9H17V11Z" /></svg>Blacklist</span></a>
+			</div>-->
+		</div>
+		<div class="container" id="content">
+			<div class="flex cs_main" id="general">
+				<img src="../icon-48.png" id="icon_blockr">
+				<span><span id="ch_title">blockr</span><br>
+				<span id="ch_subtitle">Made by @busybox11, based on <a id="adaway_list" href="https://raw.githubusercontent.com/hectorm/hmirror/master/data/adaway.org/list.txt">Adaway blocking list</a></span></span>
+			</div>
+			<div class="content_section cs_main">
+				<div class="cs_cont">
+					<div class="cs_elem" id="powered_on">
+						<div class="cse_text_div">
+							<span class="cse_title">Global switch</span><br>
+							<span class="cse_subtitle">Globally enable or disable the adblocker</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="powered_on_toggle" class="checkbox" />  
+							<label for="powered_on_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="dark_theme">
+						<div class="cse_text_div">
+							<span class="cse_title">Dark theme</span><br>
+							<span class="cse_subtitle">Dark theme on the UI of blockr</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="dark_theme_toggle" class="checkbox" />  
+							<label for="dark_theme_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="verbose_mode">
+						<div class="cse_text_div">
+							<span class="cse_title">Verbose mode</span><br>
+							<span class="cse_subtitle" title="Logs are available in the background script page (eg. on Chrome: inspect background page)">Developers : output is done is the background script</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="verbose_mode_toggle" class="checkbox" />  
+							<label for="verbose_mode_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content_section cs_main" id="blocked_content">
+				<div class="cs_header">
+					<svg xmlns="http://www.w3.org/2000/svg" class="csh_icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"/></svg>
+					Blocked content
+				</div>
+				<div class="cs_cont">
+					<div class="cs_elem" id="block_js">
+						<div class="cse_text_div">
+							<span class="cse_title">Block JavaScript</span><br>
+							<span class="cse_subtitle">Block or allow scripts (JavaScript) on webpages from blocked domains</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="block_js_toggle" class="checkbox" />  
+							<label for="block_js_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="block_webpages">
+						<div class="cse_text_div">
+							<span class="cse_title">Block webpages</span><br>
+							<span class="cse_subtitle">Block or allow webpages from blocked domains</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="block_webpages_toggle" class="checkbox" />  
+							<label for="block_webpages_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="block_iframes">
+						<div class="cse_text_div">
+							<span class="cse_title">Block iFrames</span><br>
+							<span class="cse_subtitle">Block or allow embedded content (iFrames) from blocked domains</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="block_iframes_toggle" class="checkbox" />  
+							<label for="block_iframes_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="block_content">
+						<div class="cse_text_div">
+							<span class="cse_title">Block page content / media</span><br>
+							<span class="cse_subtitle">Block or allow page contents, media elements and stylesheets from blocked domains</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="block_content_toggle" class="checkbox" />  
+							<label for="block_content_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+					<hr class="cs_sep">
+					<div class="cs_elem" id="block_websocket">
+						<div class="cse_text_div">
+							<span class="cse_title">Block websockets</span><br>
+							<span class="cse_subtitle">Block or allow websockets from blocked domains</span>
+						</div>
+						<div class="toggle_div">
+							<input type="checkbox" id="block_websocket_toggle" class="checkbox" />  
+							<label for="block_websocket_toggle" class="switch switch_elem"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="content_section cs_main" id="whitelist">
+				<div class="cs_header">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="csh_icon" viewBox="0 0 24 24"><path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M7 7H17V5H19V19H5V5H7V7M12 17V15H17V17H12M12 11V9H17V11H12M8 12V9H7V8H9V12H8M9.25 14C9.66 14 10 14.34 10 14.75C10 14.95 9.92 15.14 9.79 15.27L8.12 17H10V18H7V17.08L9 15H7V14H9.25" /></svg>
+					Whitelist
+				</div>
+				<div class="content_section">
+					<div class="cs_cont">
+						<div class="cs_elem_textarea" id="whitelist_textbox">
+							<textarea id="whitelist_textarea" name="whitelist_textarea" rows="20" class="textarea_lists" placeholder="Each line corresponds to an unblocked (whitelisted) domain host (eg. example.com)"></textarea>
+							<div class="flex">
+								<span class="btn secondary_btn left_btn" id="cancel_whitelist">Cancel</span>
+								<span class="btn primary_btn right_btn" id="save_whitelist">Save</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content_section cs_main" id="blacklist">
+				<div class="cs_header">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="csh_icon" viewBox="0 0 24 24"><path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M7 8H9V12H8V9H7V8M10 17V18H7V17.08L9 15H7V14H9.25C9.66 14 10 14.34 10 14.75C10 14.95 9.92 15.14 9.79 15.27L8.12 17H10M11 4C11 3.45 11.45 3 12 3S13 3.45 13 4 12.55 5 12 5 11 4.55 11 4M17 17H12V15H17V17M17 11H12V9H17V11Z" /></svg>
+					Blacklist
+				</div>
+				<div class="content_section">
+					<div class="cs_cont">
+						<div class="cs_elem_textarea" id="blacklist_textbox">
+							<textarea id="blacklist_textarea" name="blacklist_textarea" rows="20" class="textarea_lists" placeholder="Each line corresponds to a blocked (blacklisted) domain host (eg. example.com)"></textarea>
+							<div class="flex">
+								<span class="btn secondary_btn left_btn" id="cancel_blacklist">Cancel</span>
+								<span class="btn primary_btn right_btn" id="save_blacklist">Save</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		</div>
+	</div>
+</body>
+</html>

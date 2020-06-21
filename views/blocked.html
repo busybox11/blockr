@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page blocked - blockr</title>
+	<link rel="stylesheet" type="text/css" href="fonts/productsans.css" />
+	<link rel="stylesheet" type="text/css" href="blocked.css" id="page_css">
+</head>
+<body>
+	<div class="container mt">
+		<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 18 18" id="blocked_icon"><path d="M.5 16h17L9 1 .5 16zm9.5-2H8v-2h2v2zm0-3H8V7h2v4z"/></svg>
+		<h1 class="header_text">This page has been blocked.</h1>
+		<h2 class="desc_text">The domain of the page <code id="url_blocked">https://example.com/</code> has been blocked by blockr because it is present on our blocking list.</h2>
+		<div class="m_footer footer">
+			<div class="left_footer">
+				<span class="btn btn-outline" id="access_anyway_btn">Access anyway</span>
+				<span class="btn btn-outline" id="unblock_btn" style="display: none">Unblock</span>
+			</div>
+			<span class="btn btn-full" id="go_back_btn">Go back</span>
+		</div>
+	</div>
+	<script src="blocked.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+	width: 300px;
+	font-family: "Product Sans";
+	margin: 0;
+	background: #1A1A1A;
+	color: white;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#blockr_title {
+	text-decoration: none;
+	color: white;
+}
+
+.content {
+	align-items: center;
+	padding: 1em 1.5em;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.header {
+	width: 100%;
+	background-color: #007eff;
+	color: white;
+	box-shadow: 0px 4px 8px #00000030;
+}
+
+#reload_page {
+	padding-right: 10px;
+	height: 28px;
+	width: 28px;
+	cursor: pointer;
+	display: none;
+}
+
+/* Checkbox switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	background-color: #FFFFFF20;
+	border-radius: 20px;
+	transition: all 0.3s;
+}
+
+.switch::after {
+	content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+	left: 17px;
+}
+
+.checkbox:checked + .switch {
+	background-color: #004882;
+}
+
+.checkbox {
+	display : none;
+}
+
+#switch_elem {
+	cursor: pointer;
+}
+
+#toggle_div {
+	height: 20px;
+}
+
+#current_tab_host {
+	font-weight: bold;
+	font-size: 1.25em;
+	width: 100%;
+}
+
+#blocked_count {
+	font-size: 1.5em;
+}
+
+#blocked_list {
+    border-radius: 1vh;
+    background-color: #000000;
+    box-shadow: 0px 4px 8px 2px #00000020;
+    max-height: 250px;
+    overflow: auto;
+    color: white;
+}
+
+.blocked_element {
+    padding: 8px 12px;
+    display: flex;
+}
+
+.be_url {
+    font-size: 3vh;
+    width: 100%;
+}
+
+.unblock_be {
+	height: 4vh;
+    width: 4vh;
+    fill: black;
+}
+
+.be_s {
+    margin: 10px;
+    height: 1px;
+    background: #00000020;
+    border: 0px;
+}
+
+.blocked_req {
+	color: #ff7d7d;
+}

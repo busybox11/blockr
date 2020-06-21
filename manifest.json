@@ -1,0 +1,37 @@
+{
+	"name": "blockr",
+	"version": "0.1",
+	"description": "Adblock par busybox pour le défi du mois de CQSCMQOPDI",
+	"author": "@busybox11",
+	"permissions": ["webRequest", "webRequestBlocking", "webNavigation", "tabs", "storage", "<all_urls>"],
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "views/popup.html"
+	},
+	"options_page": "panel/index.html",
+	// "options_ui": {
+	// 	"page": "panel/embedded.html",
+	// 	"open_in_tab": false
+	// },
+
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"100": "icon.png",
+		"128": "icon-128.png"
+	},
+
+	"web_accessible_resources": [
+		"views/blocked.html",
+		"views/popup.html",
+		"panel/index.html",
+		"icon.png",
+		"icon-disabled.png"
+	],
+
+	"manifest_version": 2
+}
